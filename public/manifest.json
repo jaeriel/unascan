@@ -1,0 +1,19 @@
+{
+  "name": "Unascan",
+  "short_name": "Unascan",
+  "description": "AI-powered sugarcane disease detection and treatment recommendations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#059669",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://mocha-cdn.com/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["agriculture", "medical", "productivity"],
+  "screenshots": []
+}

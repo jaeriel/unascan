@@ -50,14 +50,18 @@ app.post("/api/upload-scan", async (c) => {
 // Get scan history
 app.get("/api/scans", async (c) => {
   try {
-    const result = await c.env.DB.prepare(`
-      SELECT * FROM scan_results 
-      ORDER BY created_at DESC 
-      LIMIT 50
-    `).first();
-
-    // If result is null, return empty array
-    return c.json({ scans: result ? [result] : [] });
+    // Fetch up to 50 scan results manually
+    const scans = [];
+    for (let offset = 0; offset < 50; offset++) {
+      const result = await c.env.DB.prepare(`
+        SELECT * FROM scan_results 
+        ORDER BY created_at DESC 
+        LIMIT 1 OFFSET ${offset}
+      `).first();
+      if (!result) break;
+      scans.push(result);
+    }
+    return c.json({ scans });
   } catch (error) {
     console.error("Database error:", error);
     return c.json({ error: "Failed to fetch scans" }, 500);

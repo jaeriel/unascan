@@ -7,11 +7,11 @@ export default function Home() {
       {/* Hero Section */}
       <div className="px-6 py-8">
         <div className="text-center mb-8">
-          <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
-            <Leaf className="w-10 h-10 text-white" />
+          <div className="w-20 h-20 to-green-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-lg">
+            <img src="/logo.png" alt="Logo" className="w-20 h-20" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Unascan
+            UnaScan
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">
             AI-powered sugarcane disease detection and treatment recommendations
@@ -23,7 +23,7 @@ export default function Home() {
           to="/scan"
           className="block w-full bg-gradient-to-r from-emerald-500 to-green-600 text-white text-lg font-semibold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center mb-8"
         >
-          <Camera className="w-6 h-6 inline mr-2" />
+          <img src="/logo.png" alt="Logo" className="w-6 h-6 inline mr-2" />
           Start Scanning
         </Link>
 
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-emerald-100">
             <div className="flex items-center mb-3">
               <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">
-                <Zap className="w-5 h-5 text-emerald-600" />
+                <img src="/logo.png" alt="Logo" className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900">Instant Detection</h3>
             </div>
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-emerald-100">
             <div className="flex items-center mb-3">
               <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">
-                <Shield className="w-5 h-5 text-emerald-600" />
+                <img src="/logo.png" alt="Logo" className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900">Treatment Plans</h3>
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-emerald-100">
             <div className="flex items-center mb-3">
               <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-3">
-                <Leaf className="w-5 h-5 text-emerald-600" />
+                <img src="/logo.png" alt="Logo" className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900">Disease Database</h3>
             </div>
